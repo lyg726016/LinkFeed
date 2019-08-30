@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.lyg.lyg.comment_friends_05.page0_main">
+
+    <!--Custom Toolbar-->
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tabLayout">
+
+    </android.support.v4.view.ViewPager>
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@android:color/holo_green_dark"
+        android:minHeight="59dp"
+        android:layout_alignBottom="@+id/page0_Main_Image_btn_Comment_Friend" />
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/toolbar"
+        android:background="@android:color/holo_green_light"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:tabIndicatorColor="@android:color/holo_green_dark" />
+
+    <ImageButton
+        android:id="@+id/page0_Main_Image_btn_Comment_Friend"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_below="@+id/page1_search_contact"
+        android:layout_toEndOf="@+id/page0_start_notification"
+        android:layout_toRightOf="@+id/page0_start_notification"
+        android:adjustViewBounds="false"
+        android:background="@android:color/transparent"
+        android:cropToPadding="false"
+        android:elevation="1dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/service_start_button"
+        android:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/page1_search_contact"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/page1_add_contact"
+        android:layout_toRightOf="@+id/page1_add_contact"
+        android:visibility="gone"
+        app:srcCompat="@drawable/page1_search" />
+
+    <ImageView
+        android:id="@+id/page1_add_contact"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/page0_add"
+        android:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/page2_refresh"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/page1_search_contact"
+        android:layout_toRightOf="@+id/page1_search_contact"
+        android:src="@drawable/page0_refresh"
+        android:visibility="visible" />
+
+    <ImageButton
+        android:id="@+id/page0_start_notification"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_below="@+id/page1_search_contact"
+        android:layout_toEndOf="@+id/page2_refresh"
+        android:layout_toRightOf="@+id/page2_refresh"
+        android:background="@drawable/tablayout_comments_white" />
+
+    <ImageButton
+        android:id="@+id/page0_main_share_to_other"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@android:color/transparent"
+        android:visibility="invisible"
+        app:srcCompat="@android:drawable/ic_menu_share" />
+
+</RelativeLayout>

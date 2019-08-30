@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="2dp">
+
+        <RelativeLayout
+            android:id="@+id/write_comment_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/pgae2_popup_pull_down_listview">
+
+            <ImageView
+                android:id="@+id/page2_popup_imageview_for_send"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:background="@android:color/white"
+                android:src="@drawable/service_view_send_button" />
+
+            <EditText
+                android:id="@+id/page2_popup_edittext_for_write_comment"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_toLeftOf="@+id/page2_popup_imageview_for_send"
+                android:layout_toStartOf="@+id/page2_popup_imageview_for_send"
+                android:background="@android:color/white"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:hint="Write your comment"
+                android:inputType="textPersonName"
+                android:lines="1"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+        <ListView
+            android:id="@+id/page2_popup_listview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/write_comment_layout"
+            android:background="@android:color/white"
+            android:clipToPadding="false"
+            android:transcriptMode="alwaysScroll"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/pgae2_popup_pull_down_listview"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:background="@android:color/transparent"
+            android:src="@drawable/webview_list_pull_down"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/pgae2_popup_pull_up_listview"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:background="@android:color/transparent"
+            android:src="@drawable/webview_list_pull_up" />
+    </RelativeLayout>
+
+    <WebView
+        android:id="@+id/page2_popup_webview"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:elevation="0dp">
+
+    </WebView>
+
+    <ProgressBar
+        android:id="@+id/page2_popup_progressbar"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/page2_popup_webview"
+        android:layout_centerHorizontal="true"
+        android:indeterminate="false" />
+
+    <LinearLayout
+        android:id="@+id/page2_linearlayout_function"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:elevation="1dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/page2_popup_copy"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:background="@drawable/webview_copy" />
+
+        <ImageButton
+            android:id="@+id/page2_popup_refresh"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/webview_refresh" />
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">LINK feed</string>
+    <!-- 17.07.15
+    share from LINK feed to other app -->
+    <string name="share_chooser_text">Share LINK feed</string>
+    <string name="share_email_native">친구와 쉽고 편하게 댓글을 공유하세요. LINK feed  다운로드 : https://play.google.com/store/apps/details?id=com.lyg.l.link_feed_1_1</string>
+    <string name="share_email_subject">LINK feed Start</string>
+    <string name="share_twitter">친구와 쉽고 편하게 댓글을 공유하세요. LINK feed  다운로드 : https://play.google.com/store/apps/details?id=com.lyg.l.link_feed_1_1</string>
+    <string name="share_facebook">친구와 쉽고 편하게 댓글을 공유하세요. LINK feed  다운로드 : https://play.google.com/store/apps/details?id=com.lyg.l.link_feed_1_1</string>
+    <string name="share_sms">친구와 쉽고 편하게 댓글을 공유하세요. LINK feed  다운로드 : https://play.google.com/store/apps/details?id=com.lyg.l.link_feed_1_1</string>
+    <string name="share_email_gmail">친구와 쉽고 편하게 댓글을 공유하세요. LINK feed  다운로드 : https://play.google.com/store/apps/details?id=com.lyg.l.link_feed_1_1</string>
+    <string name="share_kakaotalk">친구와 쉽고 편하게 댓글을 공유하세요. LINK feed  다운로드 : https://play.google.com/store/apps/details?id=com.lyg.l.link_feed_1_1</string>
+    <string name="notification_copy">LINK feed</string>
+
+</resources>

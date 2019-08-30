@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@android:color/darker_gray">
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/page999_search_layout"
+        android:clickable="true">
+
+        <ImageButton
+            android:id="@+id/page999_searchtarget_google"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_above="@+id/page999_searchtarget_naver"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:background="#dadada"
+            android:scaleType="fitCenter"
+            android:src="@drawable/page3_chrome"
+            android:visibility="invisible" />
+
+        <ImageButton
+            android:id="@+id/page999_searchtarget_naver"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_above="@+id/page999_searchtarget_youtube"
+            android:layout_alignParentLeft="true"
+            android:background="#dadada"
+            android:scaleType="fitCenter"
+            android:src="@drawable/page3_naver"
+            android:visibility="visible" />
+
+        <ImageButton
+            android:id="@+id/page999_searchtarget_youtube"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignBottom="@+id/page999_historyclear"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:background="#dadada"
+            android:scaleType="fitCenter"
+            android:src="@drawable/page3_youtube"
+            android:visibility="invisible" />
+
+        <ImageButton
+            android:id="@+id/page999_searchtarget_zum"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignBottom="@+id/page999_historyclear"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_gravity="center_horizontal|bottom"
+            android:background="#dadada"
+            android:scaleType="fitCenter"
+            android:src="@drawable/page3_zum"
+            android:visibility="invisible" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/page999_search_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/frameLayout"
+        android:layout_toRightOf="@+id/frameLayout"
+        android:background="#dadada"
+        android:clickable="false"
+        android:orientation="horizontal"
+        android:src="@android:drawable/ic_input_add"
+        android:visibility="visible">
+
+        <EditText
+            android:id="@+id/page999_search_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="0.78"
+            android:background="#ffffff"
+            android:ems="30"
+            android:hint="Search"
+            android:inputType="text|textUri"
+            android:selectAllOnFocus="true"
+            android:textColor="@android:color/black" />
+
+        <ImageButton
+            android:id="@+id/page999_search_btn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:background="#00000000"
+            android:scaleType="centerInside"
+            android:src="@drawable/page1_search"
+            android:text="go" />
+
+    </LinearLayout>
+
+    <WebView
+        android:id="@+id/page999_search_webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/frameLayout"
+        android:layout_toEndOf="@+id/frameLayout"
+        android:visibility="gone" />
+</RelativeLayout>

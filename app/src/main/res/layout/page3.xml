@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/page2_linearlayout_function"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/page2_Recommend_Page_Imagebtn_Webview_Forward"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_above="@+id/page2_popup_copy"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:background="#00ffffff"
+            android:src="@android:drawable/ic_media_ff" />
+
+        <ImageButton
+            android:id="@+id/page2_popup_copy"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:background="#00ffffff"
+            android:src="@android:drawable/ic_media_rew" />
+
+        <ImageButton
+            android:id="@+id/page2_Recommend_Page_Imagebtn_Webview_Refresh"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="#00ffffff"
+            android:src="@android:drawable/ic_menu_rotate" />
+    </LinearLayout>
+
+    <WebView
+        android:id="@+id/page3_webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/frameLayout2" />
+
+    <LinearLayout
+        android:id="@+id/page3_search_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/frameLayout"
+        android:layout_toRightOf="@+id/frameLayout"
+        android:background="#dadada"
+        android:clickable="false"
+        android:orientation="horizontal"
+        android:src="@android:drawable/ic_input_add"
+        android:visibility="visible">
+
+        <EditText
+            android:id="@+id/page3_search_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="0.78"
+            android:background="#ffffff"
+            android:ems="30"
+            android:hint="Search"
+            android:inputType="text|textUri"
+            android:selectAllOnFocus="true" />
+
+        <ImageButton
+            android:id="@+id/page3_search_btn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:background="#00000000"
+            android:scaleType="centerInside"
+            android:src="@drawable/page1_search"
+            android:text="go" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/page3_search_layout"
+        android:background="#dadada"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:id="@+id/frameLayout2">
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/page3_search_layout"
+        android:clickable="true">
+
+        <ImageButton
+            android:id="@+id/page3_searchtarget_google"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_above="@+id/page3_searchtarget_naver"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:background="#dadada"
+            android:scaleType="fitCenter"
+            android:src="@drawable/page3_chrome"
+            android:visibility="invisible" />
+
+        <ImageButton
+            android:id="@+id/page3_searchtarget_naver"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_above="@+id/page3_searchtarget_youtube"
+            android:layout_alignParentLeft="true"
+            android:background="#dadada"
+            android:scaleType="fitCenter"
+            android:src="@drawable/page3_naver"
+            android:visibility="visible" />
+
+        <ImageButton
+            android:id="@+id/page3_searchtarget_youtube"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignBottom="@+id/page3_historyclear"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:background="#dadada"
+            android:scaleType="fitCenter"
+            android:src="@drawable/page3_youtube"
+            android:visibility="invisible" />
+
+        <ImageButton
+            android:id="@+id/page3_searchtarget_zum"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignBottom="@+id/page3_historyclear"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_gravity="center_horizontal|bottom"
+            android:background="#dadada"
+            android:scaleType="fitCenter"
+            android:src="@drawable/page3_zum"
+            android:visibility="invisible" />
+    </FrameLayout>
+
+    <ProgressBar
+        android:id="@+id/page3_progressbar"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/page3_webview"
+        android:layout_centerHorizontal="true"
+        android:indeterminate="false"
+        android:visibility="invisible" />
+
+</RelativeLayout>

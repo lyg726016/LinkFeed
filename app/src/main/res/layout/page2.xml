@@ -1,0 +1,49 @@
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/page2_relativelayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <GridView
+        android:id="@+id/page2_gird_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:background="@android:color/white"
+        android:columnWidth="80dp"
+        android:gravity="center"
+        android:numColumns="auto_fit"
+        android:stretchMode="columnWidth"/>
+    <!--
+    <GridView
+        android:id="@+id/page2_last_comment_grid_view"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@color/colorPrimaryDark"
+        android:columnWidth="60dp"
+        android:drawSelectorOnTop="true"
+        android:gravity="center"
+        android:horizontalSpacing="10dp"
+        android:numColumns="auto_fit"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="10dp" />
+    -->
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-4142137880317559/9311225426">
+        <!-- 17.07.13 위는 테스트용, 아래는 내꺼
+        ads:adUnitId="ca-app-pub-3940256099942544/6300978111">
+         ads:adUnitId="ca-app-pub-4142137880317559/9311225426">
+         -->
+    </com.google.android.gms.ads.AdView>
+</RelativeLayout>
